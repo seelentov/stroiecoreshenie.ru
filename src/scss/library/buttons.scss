@@ -1,22 +1,3 @@
-//===================================================================================
-._close{
-  display: none;
-}
-._active{
-  display: flex;
-}
-//===================================================================================
-._hidden{
-  opacity: 0;
-}
-._visible{
-  opacity: 1;
-}
-//===================================================================================
-._fixed{
-  position: fixed;
-}
-//===================================================================================
 .btn{
   width: 325px;
   height: 72px;
@@ -24,7 +5,31 @@
   font-weight: bold;
   background: #FF924A;
   color: white;
-} 
+  transition: all 0.1s ease-in;
+  &:hover{
+    & .btn-hover{
+      width: 325px;
+      
+    }
+  }
+  &:active{
+    transform: scale(0.95);
+  }
+  span{
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.btn-hover{
+  position: absolute;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+  transform: translate(0, -24px);
+  width: 0%;
+  height: 72px;
+  background: rgba($color: #000000, $alpha: 0.3)
+}
 //===================================================================================
 
 //===================================================================================

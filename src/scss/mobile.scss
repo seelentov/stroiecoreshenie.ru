@@ -6,6 +6,12 @@
       row-gap: 7px;
     }
   }
+  .banners{
+    &__images{
+      height: 300px
+    }
+  }
+
 }
 @media(max-width:426px){
   .container{
@@ -18,6 +24,22 @@
     }
     &__menu-burger{
       display: flex;
+    }
+  }
+  .banners{
+    padding-top: 100px;
+    &__images{
+      z-index: -1;
+      height: 200px
+    }
+    &__header{
+      font-size: 20px !important;
+      & span {
+        font-size: 22px;
+      }
+    }
+    &__desc{
+      font-size: 16px !important;
     }
   }
   

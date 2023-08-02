@@ -19,7 +19,8 @@
     строительная компания
     </h2>
     <button class="banners__btn btn">
-    ПОДРОБНЕЕ 
+      <div class="btn-hover"></div>
+    <span> ПОДРОБНЕЕ</span> 
     </button>
   </div>
   </div>

@@ -1,6 +1,6 @@
 .banners {
   text-transform: uppercase;
-  padding: 0 0 80px 0;
+  padding: 0 0 100px 0;
 
 
   // .banners__container
@@ -15,8 +15,13 @@
   // .banners__images
   
   &__images {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar{
+      display: none;
+    }
     height: 600px;
-    overflow: hidden;
+    overflow: scroll;
     max-width: 100%;
     display: flex;
     min-width: 100%;
