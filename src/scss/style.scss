@@ -1,6 +1,7 @@
 @import 'modules/__home.scss';
 @import 'modules/__footer.scss';
 @import 'modules/__header.scss';
+@import 'modules/__banners.scss';
 
 @import 'media.scss';
 @import 'mobile.scss';
@@ -118,7 +119,6 @@ ul li {
 	list-style: none;
 }
 img {
-  object-fit: contain;
   max-width: 100%;
 	vertical-align: top;
 }

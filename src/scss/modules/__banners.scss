@@ -1,0 +1,64 @@
+.banners {
+  text-transform: uppercase;
+  padding: 0 0 80px 0;
+
+
+  // .banners__container
+  
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  
+  // .banners__images
+  
+  &__images {
+    height: 600px;
+    overflow: hidden;
+    max-width: 100%;
+    display: flex;
+    min-width: 100%;
+    & img{
+      transform: scale(0.95);
+      cursor: pointer;
+      object-fit: cover;
+      min-width: 70%;
+    }
+  }
+  
+  // .banners__text
+  
+  &__text {
+    width: 100%;
+    row-gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  // .banners__header
+  
+  &__header {
+    font-weight: bold;
+    font-size: 49px;
+    span{
+      font-size: 59px; 
+    }
+  }
+  
+  // .banners__desc
+  
+  &__desc {
+    font-size: 30px;
+  }
+  
+  // .banners__btn
+  
+  &__btn {}
+  }
+  .container {
+  }
+  .btn {
+  }
+  
