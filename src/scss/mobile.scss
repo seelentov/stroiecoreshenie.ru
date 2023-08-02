@@ -1,7 +1,24 @@
+@media(max-width: 1023px){
+  .header{
+    &__nav{
+      flex-wrap: wrap;
+      justify-content: center;
+      row-gap: 7px;
+    }
+  }
+}
 @media(max-width:426px){
   .container{
-    max-width: 320px;
+    max-width: 320px !important;
   }
-  
+  .header{
+    position: fixed;
+    &__nav{
+      display: none;
+    }
+    &__menu-burger{
+      display: flex;
+    }
+  }
   
 }
