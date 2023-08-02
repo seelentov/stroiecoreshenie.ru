@@ -7,16 +7,7 @@
   @@include('php/__header.php',{})
 <div class="wrapper">
 <main>
-
-<ul></ul>
-  <li>Вставьте</li>
-  <li>свой</li>
-  <li>HTML</li>
-  <li>в</li>
-  <li>это</li>
-  <li>поле</li>
-</ul>
-
+  
 </main>
 </div>
   @@include('php/__footer.php',{})
