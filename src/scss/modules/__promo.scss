@@ -1,0 +1,91 @@
+.promo {
+  padding: 120px 0;
+  // .promo__container
+
+  &__container {}
+
+  // .promo__header
+
+  &__header {
+    line-height: .7;
+    text-transform: uppercase;
+    font-size: 61px;
+    font-weight: bold;
+
+    & span {
+      font-size: 40px;
+      font-weight: 400;
+    }
+  }
+
+  // .promo__items
+
+  &__items {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    overflow-y: scroll;
+    margin-top: 96px;
+    max-width: none;
+    display: flex;
+  }
+
+  &__btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // .promo__item
+  &__btn {
+    z-index: 1;
+    margin: 100px auto 0 auto;
+    text-align: center;
+    color: black !important;
+
+    & .btn-hover {
+      z-index: 2;
+      transform: translate(0, -61px);
+    }
+
+    & p {
+      transform: translate(-25%, 0);
+      width: 200%;
+      font-size: 42px;
+      position: relative;
+      z-index: 3;
+      position: relative;
+      z-index: 3;
+    }
+  }
+
+  &__item {
+    transform: scale(0.9);
+    width: 611px;
+    height: 500px;
+
+    & img {
+      max-width: none;
+      min-width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.promo-item {}
+
+.promo-item-1 {}
+
+.promo-item-2 {}
+
+.promo-item-3 {}
+
+.promo-item-4 {}
+
+.promo-item-5 {}
+
+.promo-item-6 {}
