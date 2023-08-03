@@ -14,6 +14,9 @@
       <section class="home__our-tools">
         @@include('php/__our-tools.php',{})
       </section>
+      <section class="home__advantages">
+        @@include('php/__advantages.php',{})
+      </section>
     </main>
   </div>
   @@include('php/__footer.php',{})
