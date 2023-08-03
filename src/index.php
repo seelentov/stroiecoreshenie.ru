@@ -17,6 +17,12 @@
       <section class="home__advantages">
         @@include('php/__advantages.php',{})
       </section>
+      <section class="home__features">
+        @@include('php/__features.php',{})
+      </section>
+      <section class="home__promo">
+        @@include('php/__promo.php',{})
+      </section>
     </main>
   </div>
   @@include('php/__footer.php',{})
