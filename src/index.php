@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="ru">
-  @@include('php/__head.php',{
-    "title":"Тест"
-  })
+@@include('php/__head.php',{
+"title":"ООО СтройЭкоРешение"
+})
+
 <body>
   @@include('php/__header.php',{})
-<div class="wrapper">
-<main>
-  <section class="home__banners">
-  @@include('php/__banners.php',{})
-  </section>
-  
-</main>
-</div>
+  <div class="wrapper">
+    <main>
+      <section class="home__banners">
+        @@include('php/__banners.php',{})
+      </section>
+      <section class="home__our-tools">
+        @@include('php/__our-tools.php',{})
+      </section>
+    </main>
+  </div>
   @@include('php/__footer.php',{})
   <script src='js/app.min.js'></script>
 </body>
+
 </html>

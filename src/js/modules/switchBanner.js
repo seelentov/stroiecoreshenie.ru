@@ -13,7 +13,7 @@ bannerBlock.scrollTo({
   left: switchPoints[3]
 })
 
-let thisPos = 3
+let thisPos = 4
 
 bannerBlock.addEventListener('scroll', () => {
   if (bannerBlock.scrollLeft <= switchPoints[0] || bannerBlock.scrollLeft >= switchPoints[6]) {
@@ -29,32 +29,42 @@ let endPoint
 
 let scrollStatus = 1
 
-if (scrollStatus === 1) {
-  scrollStatus = 0
-  bannerBlock.addEventListener('mousedown', (e) => {
-    startPoint = bannerBlock.scrollLeft
-  })
+bannerBlock.addEventListener('mousedown', () => {
+  startPoint = bannerBlock.scrollLeft
+  console.log(scrollStatus)
+})
 
-  bannerBlock.addEventListener('mouseup', () => {
+bannerBlock.addEventListener('mouseup', () => {
+  if (scrollStatus === 1) {
+    scrollStatus = 0
     endPoint = bannerBlock.scrollLeft
-    if (startPoint > endPoint) thisPos -= 1
+    if (Math.abs(endPoint - (startPoint)) <= switchPoints[0] / 3) thisPos -= 0
+    else if (startPoint >= endPoint) thisPos -= 1
     else thisPos += 1
     bannerBlock.scrollTo({
       left: switchPoints[thisPos],
       behavior: 'smooth'
     })
-  })
+    setTimeout(() => {
+      scrollStatus = 1
+    }, 500)
+  }
+})
 
-  bannerBlock.addEventListener('mouseleave', () => {
+bannerBlock.addEventListener('mouseleave', () => {
+  if (scrollStatus === 1) {
+    scrollStatus = 0
     endPoint = bannerBlock.scrollLeft
-    if (startPoint > endPoint) thisPos -= 1
+    if (Math.abs(endPoint - (startPoint)) <= switchPoints[0] / 3) thisPos -= 0
+    else if (startPoint > endPoint) thisPos -= 1
     else thisPos += 1
+    console.log('asdasd')
     bannerBlock.scrollTo({
       left: switchPoints[thisPos],
       behavior: 'smooth'
     })
-  })
-  setTimeout(() => {
-    scrollStatus = 1
-  }, 500)
-}
+    setTimeout(() => {
+      scrollStatus = 1
+    }, 500)
+  }
+})
