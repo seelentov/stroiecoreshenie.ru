@@ -23,6 +23,18 @@
       <section class="home__promo">
         @@include('php/__promo.php',{})
       </section>
+      <section class="home__about">
+        @@include('php/__about.php',{})
+      </section>
+      <section class="home__reviews">
+        @@include('php/__reviews.php',{})
+      </section>
+      <section class="home__callback">
+        @@include('php/__callback.php',{})
+      </section>
+      <section class="home__contacts">
+        @@include('php/__contacts.php',{})
+      </section>
     </main>
   </div>
   @@include('php/__footer.php',{})

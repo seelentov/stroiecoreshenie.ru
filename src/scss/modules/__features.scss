@@ -19,15 +19,7 @@ padding:120px 0;
   // .features__items
   
   &__items {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    &::-webkit-scrollbar{
-      display: none;
-    }
-    overflow: scroll;
     margin-top: 40px;
-    max-width: none;
-    display: flex;
   }
   
   // .features__item

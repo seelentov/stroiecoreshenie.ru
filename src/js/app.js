@@ -1,14 +1,18 @@
 /* eslint-disable no-unused-vars */
-import menuBurger from './modules/menuBurger.js'
-import { swipingBlock } from './modules/swipingBlock.js'
-import switchBanner from './modules/switchBanner.js'
-import switchTools from './modules/switchTools.js'
-import arrows from './modules/arrows.js'
-import switchFeatures from './modules/switchFeatures.js'
-import switchPromo from './modules/switchPromo.js'
+import $ from './modules/jquery.js'
+import owlCarousel from './modules/owl.carousel.min.js'
 
-document.addEventListener('DOMContentLoaded', () => {
-  swipingBlock(document.querySelector('.banners__images'))
-  swipingBlock(document.querySelector('.features__items'))
-  swipingBlock(document.querySelector('.promo__items'))
-})
+import arrows from './modules/arrows.js'
+
+import switchTools from './modules/switchTools.js'
+
+import menuBurger from './modules/menuBurger.js'
+
+import owlBanner from './modules/owlBanner.js'
+
+import owlFeatures from './modules/owlFeatures.js'
+import owlPromo from './modules/owlPromo.js'
+import owlAbout from './modules/owlAbout.js'
+import owlReviews from './modules/owlReviews.js'
+
+import yMap from './modules/yMap.js'

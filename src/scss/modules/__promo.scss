@@ -21,14 +21,6 @@
   // .promo__items
 
   &__items {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-
-    &::-webkit-scrollbar {
-      display: none;
-    }
-
-    overflow-y: scroll;
     margin-top: 96px;
     max-width: none;
     display: flex;
