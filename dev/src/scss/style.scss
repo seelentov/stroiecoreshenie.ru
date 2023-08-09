@@ -1,0 +1,155 @@
+@import 'library/owlcarousel.scss';
+
+@import 'modules/__home.scss';
+@import 'modules/__footer.scss';
+@import 'modules/__header.scss';
+@import 'modules/__banners.scss';
+@import 'modules/__our-tools.scss';
+@import 'modules/__advantages.scss';
+@import 'modules/__features.scss';
+@import 'modules/__promo.scss';
+@import 'modules/__about.scss';
+@import 'modules/__reviews.scss';
+@import 'modules/__callback.scss';
+@import 'modules/__contacts.scss';
+@import 'modules/__form.scss';
+
+@import 'media.scss';
+@import 'mobile.scss';
+
+@import 'policy.scss';
+
+@import 'library/text.scss';
+@import 'library/variables.scss';
+@import 'library/buttons.scss';
+@import 'library/forms.scss';
+@import 'library/checkbox.scss';
+@import 'library/inputs.scss';
+@import 'library/radios.scss';
+
+//=======================================================================
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  @media(max-width:1200px){
+    max-width: 970px;
+  }
+  @media(max-width:992px){
+    max-width: 750px;
+  }
+}
+//=======================================================================
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	// Прижимаем footer
+	> main {
+		flex: 1 1 auto;
+	}
+	// Фикс для слайдеров
+	> * {
+		min-width: 0;
+	}
+}
+
+//=======================================================================
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: white; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: $maincolor; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $maincolor; 
+}
+
+//=======================================================================
+* {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	// outline: none;
+}
+a:focus,
+a:active {
+	// outline: none;
+}
+html,
+body { 
+	height: 100%;
+  scroll-behavior: smooth;
+}
+body {
+	line-height: 1.2;
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	//text-rendering: optimizeLegibility;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+input,
+button,
+textarea {
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+}
+button {
+	cursor: pointer;
+	color: inherit;
+	background-color: inherit;
+}
+a {
+	color: inherit;
+}
+a:link,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+  max-width: 100%;
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+
+//=======================================================================
+
+@import 'fonts.scss';
+@import 'googlefonts.scss';
+
+
